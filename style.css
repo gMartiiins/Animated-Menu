@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  
+}
+.cabecalho{
+    background-color: rgb(44, 44, 44);
+    height: max(60px, 4vw);
+}
+.menuNav{
+    display: flex;
+    justify-content: flex-end;
+}
+body{
+    background-color: rgb(56, 56, 56);
+}
+
+.textHome{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(44, 44, 44);
+    font-size: max(16px, 1.10vw);
+    width: max(95px, 7vw);
+    height: max(60px, 4vw);
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    border-top: 5px solid rgb(44, 44, 44);
+    border-bottom: 5px solid rgb(44, 44, 44);
+   
+}
+.textHome:hover{
+    color: rgb(255, 255, 85);
+    box-sizing: border-box;
+    background-color: rgb(29, 29, 29);
+    border-top: 5px solid rgb(255, 255, 85);
+    font-size: max(17px, 1.14vw);
+    border-bottom: 5px solid rgb(29, 29, 29);
+    transition: 0.3s ease-in-out;
+}
+.blocoHome1, .blocoHome2, .blocoHome3{
+    display: none;
+}
+.buttonSobre, .buttonIntroducao, .buttonReferencias{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: max(16px, 1vw);
+    width: max(95px, 7vw);
+    height: max(60px, 1vw);
+    background-color: rgb(44, 44, 44);
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+}
+.buttonSobre:hover, .buttonIntroducao:hover, .buttonReferencias:hover{
+    background-color: rgb(29, 29, 29);
+    color: rgb(255, 255, 85);
+}
+
+.buttonSobre::after, .buttonIntroducao::after, .buttonReferencias::after{
+    content: "";
+    background-color: rgb(255, 255, 85);
+    width: 3px;
+    top: 0;
+    right: 0;
+    height: 0%;
+    position: absolute;
+}
+
+.buttonSobre:hover::after, .buttonIntroducao:hover::after, .buttonReferencias:hover::after{
+    height: 100%;
+    transition: 0.3s;
+}
+
+.buttonSobre::before, .buttonIntroducao::before, .buttonReferencias::before{
+    content: "";
+    content: "";
+    background-color: rgb(255, 255, 85);
+    width: 3px;
+    top: 0;
+    left: 0;
+    height: 0%;
+    position: absolute;
+}
+
+.buttonSobre:hover::before, .buttonIntroducao:hover::before, .buttonReferencias:hover::before{
+    height: 100%;
+    transition: 0.3s;
+}
+
+.textQuemSomos{
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(44, 44, 44);
+    font-size: max(16px, 1.10vw);
+    width: max(95px, 7vw);
+    height: max(60px, 4vw);
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    border-top: 5px solid rgb(44, 44, 44);
+    border-bottom: 5px solid rgb(44, 44, 44);
+   
+}
+.textQuemSomos:hover{
+    color: rgb(255, 255, 85);
+    box-sizing: border-box;
+    background-color: rgb(29, 29, 29);
+    border-top: 5px solid rgb(255, 255, 85);
+    font-size: max(17px, 1.14vw);
+    border-bottom: 5px solid rgb(29, 29, 29);
+    transition: 0.3s ease-in-out;
+}
+
+.blocoQuemSomos1, .blocoQuemSomos2, .blocoQuemSomos3{
+    display: none;
+}
+
+.buttonLogo, .buttonEmpresa, .buttonContatos{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: max(16px, 1vw);
+    width: max(95px, 7vw);
+    height: max(60px, 1vw);
+    background-color: rgb(44, 44, 44);
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+   
+}
+.buttonLogo:hover, .buttonEmpresa:hover, .buttonContatos:hover{
+    background-color: rgb(29, 29, 29);
+    color: rgb(255, 255, 85);
+}
+
+.buttonLogo::after, .buttonEmpresa::after, .buttonContatos::after{
+    content: "";
+    background-color: rgb(255, 255, 85);
+    width: 3px;
+    top: 0;
+    right: 0;
+    height: 0%;
+    position: absolute;
+}
+
+.buttonLogo:hover::after, .buttonEmpresa:hover::after, .buttonContatos:hover::after{
+    height: 100%;
+    transition: 0.3s;
+}
+
+.buttonLogo::before, .buttonEmpresa::before, .buttonContatos::before{
+    content: "";
+    content: "";
+    background-color: rgb(255, 255, 85);
+    width: 3px;
+    top: 0;
+    left: 0;
+    height: 0%;
+    position: absolute;
+}
+
+.buttonLogo:hover::before, .buttonEmpresa:hover::before, .buttonContatos:hover::before{
+    height: 100%;
+    transition: 0.3s;
+}
+.textGaleria{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(44, 44, 44);
+    font-size: max(16px, 1.10vw);
+    width: max(95px, 7vw);
+    height: max(60px, 4vw);
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    border-top: 5px solid rgb(44, 44, 44);
+    border-bottom: 5px solid rgb(44, 44, 44);
+   
+}
+.textGaleria:hover{
+    color: rgb(255, 255, 85);
+    box-sizing: border-box;
+    background-color: rgb(29, 29, 29);
+    border-top: 5px solid rgb(255, 255, 85);
+    font-size: max(17px, 1.14vw);
+    border-bottom: 5px solid rgb(29, 29, 29);
+    transition: 0.3s ease-in-out;
+}
+.blocoGaleria1, .blocoGaleria2, .blocoGaleria3{
+    display: none;
+    
+}
+.buttonAlbuns, .buttonFotos, .buttonVideos{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: max(16px, 1vw);
+    width: max(95px, 7vw);
+    height: max(60px, 1vw);
+    background-color: rgb(44, 44, 44);
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+    
+}
+.buttonAlbuns:hover, .buttonFotos:hover, .buttonVideos:hover{
+    background-color: rgb(29, 29, 29);
+    color: rgb(255, 255, 85);
+}
+
+.buttonAlbuns::after, .buttonFotos::after, .buttonVideos::after{
+    content: "";
+    background-color: rgb(255, 255, 85);
+    width: 3px;
+    top: 0;
+    right: 0;
+    height: 0%;
+    position: absolute;
+}
+
+.buttonAlbuns:hover::after, .buttonFotos:hover::after, .buttonVideos:hover::after{
+    height: 100%;
+    transition: 0.3s;
+}
+
+.buttonAlbuns::before, .buttonFotos::before, .buttonVideos::before{
+    content: "";
+    content: "";
+    background-color: rgb(255, 255, 85);
+    width: 3px;
+    top: 0;
+    left: 0;
+    height: 0%;
+    position: absolute;
+}
+
+.buttonAlbuns:hover::before, .buttonFotos:hover::before, .buttonVideos:hover::before{
+    height: 100%;
+    transition: 0.3s;
+}
+
+.textProdutos{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(44, 44, 44);
+    font-size: max(16px, 1.10vw);
+    width: max(95px, 7vw);
+    height: max(60px, 4vw);
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    border-top: 5px solid rgb(44, 44, 44);
+    border-bottom: 5px solid rgb(44, 44, 44);
+   
+}
+.textProdutos:hover{
+    color: rgb(255, 255, 85);
+    box-sizing: border-box;
+    background-color: rgb(29, 29, 29);
+    border-top: 5px solid rgb(255, 255, 85);
+    font-size: max(17px, 1.14vw);
+    border-bottom: 5px solid rgb(29, 29, 29);
+    transition: 0.3s ease-in-out;
+}
+.blocoProdutos1, .blocoProdutos2, .blocoProdutos3{
+    display: none;
+}
+.buttonVestimenta, .buttonCalcados, .buttonAcessorios{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: max(16px, 1vw);
+    width: max(95px, 7vw);
+    height: max(60px, 1vw);
+    background-color: rgb(44, 44, 44);
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+}
+.buttonVestimenta:hover, .buttonCalcados:hover, .buttonAcessorios:hover{
+    background-color: rgb(29, 29, 29);
+    color: rgb(255, 255, 85);
+}
+
+.buttonVestimenta::after, .buttonCalcados::after, .buttonAcessorios::after{
+    content: "";
+    background-color: rgb(255, 255, 85);
+    width: 3px;
+    top: 0;
+    right: 0;
+    height: 0%;
+    position: absolute;
+}
+
+.buttonVestimenta:hover::after, .buttonCalcados:hover::after, .buttonAcessorios:hover::after{
+    height: 100%;
+    transition: 0.3s;
+}
+
+.buttonVestimenta::before, .buttonCalcados::before, .buttonAcessorios::before{
+    content: "";
+    content: "";
+    background-color: rgb(255, 255, 85);
+    width: 3px;
+    top: 0;
+    left: 0;
+    height: 0%;
+    position: absolute;
+}
+
+.buttonVestimenta:hover::before, .buttonCalcados:hover::before, .buttonAcessorios:hover::before{
+    height: 100%;
+    transition: 0.3s;
+}
